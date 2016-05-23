@@ -17,7 +17,7 @@ export STIGMA_HOME="/var/www/stigma2-dev"
 		## Laravel Setting
 		#cd /var/www && composer create-project --prefer-dist laravel/laravel blog "~5.0.0"
 		#cd /var/www && git clone https://github.com/ilyf28/stigma2-dev.git
-		cd /var/www/stigma2-dev && git init . && git remote add origin https://github.com/stigma2/stigma2-dev && git pull origin/master
+		cd /var/www/stigma2-dev && git init . && git remote add origin https://github.com/stigma2/stigma2-dev && git pull origin master
                             chmod -R 777 storage && composer install
 		/bin/cp -rf /var/www/stigma2-dev/.env.example /var/www/stigma2-dev/.env
 		cd /var/www/stigma2-dev && php artisan key:generate
