@@ -37,6 +37,8 @@ RUN curl -sS https://getcomposer.org/installer | php && \
     mv composer.phar /usr/local/bin/composer && \
     chmod +x /usr/local/bin/composer
 
+# Create Laravel Project
+RUN cd /var/www && composer create-project --prefer-dist laravel/laravel stigma2-dev "~5.0.0"
 
 # Config file copy
 COPY launch_stigma.sh $STIGMA_WORK
